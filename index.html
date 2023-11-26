@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soccer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="foam.css"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> 
+</script>
+<script type="text/javascript">
+  function sendemail(form){
+    const email=form.children.email.value
+    console.log(email)
+    var templateParams={
+      to_email:email
+    }
+    emailjs.send("service_sqj4m3c", "template_ft5mfsi",templateParams)
+  }
+  (function(){
+     emailjs.init("v2qdhae0375_bCAmj");
+  })();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+  <body>
+    <header>
+      <div class="full-width" id="top-header">
+        <div class="logo-container">
+
+          <img
+            id="logo"
+            src="./images/logo1.svg"
+            alt="man kicking a soccer ball"
+          />
+        </div>
+        <div class="navlinks-container">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars closed hamburger" id="hamburger-closed"></i>
+            <i class="fa fa-x hidden opened hamburger" id="hamburger-opened"></i>
+          </a>
+         
+         
+        </div>
+      </div>
+      <div class="full-width">
+        <ul  id="navlinks" >
+          <li class="navlink"><a href="#">HOME</a></li>
+          <li class="navlink"><a href="#">CONTACTS</a></li>
+          <li class="navlink"><a href="#">NEWS</a></li>
+          <li class="navlink"><a href="#">FEATURES</a></li>
+        </ul>
+      </div>
+    </header>
+    <div>
+      <div id="hero-1" class="hero">
+        <h1><span class="newline-mobile">UGANDA</span> <span class="newline-mobile">FOOTBALL CLUB</span></h1>
+        <p id="hero-p">At Uganda Football Club, we're not just passionate about the game; we're dedicated to fostering a community of football enthusiasts, both young and old. Whether you're a die-hard supporter, a budding talent, or simply someone who loves the thrill of the pitch, UFC has something special for you.</p>
+      </div>
+      <section class="centered-section">
+        <h3 class="highlight">RESULTS</h3>
+        <h1 class="main-title">THE LAST MATCH</h1>
+        <div class="centered-content col-4">
+            <div class="card slide-right">
+                <div class="card-word">05-08-2030</div>
+                <div class="team"> REVERE </div>
+                <div class="score">
+                  <img
+                    class="team-logo"
+                    src="./images/united.webp"
+                    alt="man kicking a soccer ball"
+                  />
+                  <span class="goals">1-2</span>
+                  <img
+                    class="team-logo"
+                    src="./images/sydney.jpeg"
+                    alt="man kicking a soccer ball"
+                  />
+                </div>
+                <div class="team"> BOSTON</div>
+                <div class="card-word">Uganda League 2030</div>
+            </div>
+            <div class="card slide-left">
+                <div class="card-word">05-08-2030</div>
+                <div class="team">KCCB </div>
+                <div class="score">
+                <img
+                  class="team-logo"
+                  src="/images/royal.webp"
+                  alt="man kicking a soccer "
+                  />
+                <span class="goals">3-3</span>
+                <img
+                class="team-logo"
+                src="/images/luca.png"
+                alt="man kicking a soccer "
+                />
+                </div>
+                <div class="team"> BEDFORD</div>
+                <div class="card-word">Uganda League 2030</div>
+            </div>
+            <div class="card slide-right">
+                <div class="card-word">05-08-2030</div>
+                <div class="team">BEDFORD </div>
+                <div class="score">
+                  <img
+                    class="team-logo"
+                    src="/images/luca.png"
+                    alt="man kicking a soccer "
+                    />
+                 <span class="goals">0-2</span>
+                  <img
+                    class="team-logo"
+                    src="/images/sydney.jpeg"
+                    alt="man kicking a soccer "
+                    />
+                    </div>
+                    <div class="team">BOSTON</div>
+                <div class="card-word">Uganda League 2030</div>
+            </div>
+            <div class="card slide-left">
+                <div class="card-word">05-08-2030</div>
+                <div class="team">REVERE </div>
+                <div class="score">
+                  <img
+                    class="team-logo"
+                    src="/images/united.webp"
+                    alt="man kicking a soccer "
+                    />
+                 <span class="goals">6-2</span>
+                  <img
+                    class="team-logo"
+                    src="/images/royal.webp"
+                    alt="man kicking a soccer "
+                    />
+                    <div class="team"> KCCB</div>
+                <div class="card-word">Uganda League 2030</div>
+            </div>
+        </div>
+      </section>
+      <section class="centered-section" id="table-section">
+        <h3 class="highlight">TABLE</h3>
+        <h1 class="main-title">UGANDA LEAGUE</h1>
+        <div class="centered-content">
+          <table>
+            <thead id="table-ranking-mobile">
+              <tr>
+                <th>RANK</th>
+                <th>TEAM</th>
+                <th> PL</th>
+                <th> W</th>
+                <th> L</th>
+                <th> D</th>
+                <th>PT</th>
+              </tr>
+            </thead>
+            <thead id="table-ranking-desktop">
+              <tr >
+                <th>RANK</th>
+                <th>TEAM</th>
+                <th>PLAYED</th>
+                <th>WON</th>
+                <th>LOST</th>
+                <th> DRAWN</th>
+                <th>POINTS</th>
+              </tr>
+            </thead>
+           <tbody>
+             <tr>
+              <td>1</td>
+              <td>Arsenal</td>
+              <td>5</td>
+              <td>4</td>
+              <td>1</td>
+              <td>0</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+             <td>2</td>
+             <td>Aston Villa</td>
+             <td>5</td>
+             <td>3</td>
+             <td>1</td>
+             <td>1</td>
+             <td>10</td>
+           </tr>
+         </tbody>
+         <tbody>
+          <tr>
+           <td>3</td>
+           <td>KCCA</td>
+           <td>5</td>
+           <td>2</td>
+           <td>2</td>
+           <td>1</td>
+           <td>8</td>
+         </tr>
+       </tbody>
+       <tbody>
+        <tr>
+         <td>4</td>
+         <td>VIPERS</td>
+         <td>5</td>
+         <td>1</td>
+         <td>3</td>
+         <td>1</td>
+         <td>6</td>
+       </tr>
+     </tbody>
+          </table>
+        </div>
+      </section>  
+      <section class="centered-section" id="news-section">
+        <div class="section-header">
+          <h3 class="highlight">NEWS</h3>
+          <h1 class="main-title">CURRENT HEADLINES</h1>
+        </div>
+        <div class="centered-content col-2 content" > 
+          <div class="col-left">
+            <!--fst article row strts here-->
+            <div class="article-row">
+              <div class="image">
+                <img
+                    class=""
+                    src="/images/england.jpg"
+                    alt="man kicking a soccer "
+                    />
+              </div>
+              <div class="text">
+                <h4 >august 4 2018</h4>
+              <h2> WHAT TO EXPECT FROM ENGLAND</h2>
+              <P>How the fans should react to the stunts from the favorite…</P>
+              </div>
+            </div>
+            <!--fst article row ends here-->
+            <!--second article row strts here-->
+            <div class="article-row">
+              <div class="image">
+                <img
+                    class=""
+                    src="/images/green.png"
+                    alt="man kicking a soccer "
+                    />
+              </div>
+              <div class="text">
+                <h4>August 1 2018</h4>
+                <h2>2018 LEAGUE REPORT AND HIGHLIGHTS</h2>
+                <P>If you missed it, we give you a great recap! Follow…</P>
+              </div>
+            </div>
+            <!--2 article-row ends here -->
+          </div>
+          <div class="col-right">
+            <div class="row-up">
+              <iframe id="news-video"  src="https://www.youtube.com/embed/C_sb2KYbi-4?si=wQuOnNEH6BUAVHpb" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="row-bottom">
+              <h4 class="subtitle">October 30 2018</h4>
+              <h2 class="title">VIDEO FOOTAGE OF THE LASTEST GAME</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hero-2" class="hero">
+        <div class="halfsize">
+          <h1>About the Uganda Football Club</h1>
+          <p>Uganda Football Club has a long and exciting history that started three decades ago. It is one of the most popular football clubs that offer training programs for the youth, as well as summer camps and premium membership benefits during championships.</p>
+        </div>
+        </section>
+        <footer id="soccer-footer">
+          <div class="footer">
+            <h2 class="signUp">SIGN UP NOW</h2>
+            <P class="bottomTitle">Become a member of our online community and get tickets to upcoming matches or sports events faster!</P>
+            <div class="search-box">
+              <button class="btn-search"><i class="fas fa-search"></i></button>
+              <input type="text" class="input-search" placeholder="Type to Search...">
+            </div>
+           </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
